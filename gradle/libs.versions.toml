@@ -1,0 +1,80 @@
+# @formatter:off
+[versions]
+appengine-gradle-plugin =               "2.8.3"       # https://mvnrepository.com/artifact/com.google.cloud.tools/appengine-gradle-plugin
+caffiene =                              "3.1.8"       # https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine
+coroutines =                            "1.10.1"      # https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
+firebase =                              "9.3.0"       # https://mvnrepository.com/artifact/com.google.firebase/firebase-admin
+firestore =                             "3.23.1"      # https://mvnrepository.com/artifact/com.google.cloud/google-cloud-firestore
+kotlin =                                "2.1.0"       # https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib
+kotlinx-coroutines-test =               "1.8.1"       # https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-test
+kotlinx-datetime =                      "0.6.0"       # https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-datetime
+kotlinx-html =                          "0.11.0"      # https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-html
+ktor =                                  "3.0.3"       # https://mvnrepository.com/artifact/io.ktor/ktor-client-core
+logback =                               "1.4.14"      # https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+oauth0-jwt =                            "4.4.0"       # https://mvnrepository.com/artifact/com.auth0/java-jwt
+openai-java =                           "0.8.0"       # https://central.sonatype.com/artifact/com.openai/openai-java
+rate-limiting =                         "2.1.1"       # https://mvnrepository.com/artifact/io.github.flaxoos/ktor-server-rate-limiting
+json =                                  "20241224"    # https://mvnrepository.com/artifact/org.json/json
+kotlinx-serialization-json =            "1.7.3"       # https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-json
+shadow =                                "8.1.1"       # https://mvnrepository.com/artifact/com.github.johnrengelman.shadow
+tink =                                  "1.15.0"      # https://mvnrepository.com/artifact/com.google.crypto.tink/tink
+vapi =                                  "0.2.0"       # https://github.com/VapiAI/server-sdk-java/tree/main
+
+[plugins]
+appengine =                             { id = "com.google.cloud.tools.appengine",                      version.ref = "appengine-gradle-plugin"     }
+kotlin-jvm =                            { id = "org.jetbrains.kotlin.jvm",                              version.ref = "kotlin"                      }
+kotlin-serialization =                  { id = "org.jetbrains.kotlin.plugin.serialization",             version.ref = "kotlin"                      }
+ktor-plugin =                           { id = "io.ktor.plugin",                                        version.ref = "ktor"                        }
+shadow =                                { id = "com.github.johnrengelman.shadow",                       version.ref = "shadow"                      }
+
+[libraries]
+caffiene =                              { module = "com.github.ben-manes.caffeine:caffeine",            version.ref = "caffiene"                    }
+coroutines =                            { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core",     version.ref = "coroutines"                  }
+firebase =                              { module = "com.google.firebase:firebase-admin",                version.ref = "firebase"                    }
+firestore =                             { module = "com.google.cloud:google-cloud-firestore",           version.ref = "firestore"                   }
+json =                                  { module = "org.json:json",                                     version.ref = "json"                        }
+kotlin-test-junit =                     { module = "org.jetbrains.kotlin:kotlin-test-junit",            version.ref = "kotlin"                      }
+kotlinx-html =                          { module = "org.jetbrains.kotlinx:kotlinx-html-jvm",            version.ref = "kotlinx-html"                }
+kotlinx-coroutines-test =               { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test",     version.ref = "kotlinx-coroutines-test" }
+kotlinx-datetime =                      { module = "org.jetbrains.kotlinx:kotlinx-datetime",            version.ref = "kotlinx-datetime"            }
+kotlinx-serialization-json =            { module = "org.jetbrains.kotlinx:kotlinx-serialization-json",  version.ref = "kotlinx-serialization-json"  }
+ktor-client-apache =                    { module = "io.ktor:ktor-client-apache-jvm",                    version.ref = "ktor"                        }
+
+ktor-client-cio =                       { module = "io.ktor:ktor-client-cio",                           version.ref = "ktor"                        }
+ktor-client-ios =                       { module = "io.ktor:ktor-client-ios",                           version.ref = "ktor"                        }
+ktor-client-curl =                      { module = "io.ktor:ktor-client-curl",                          version.ref = "ktor"                        }
+ktor-client-darwin =                    { module = "io.ktor:ktor-client-darwin",                        version.ref = "ktor"                        }
+ktor-client-js =                        { module = "io.ktor:ktor-client-js",                            version.ref = "ktor"                        }
+
+ktor-client-content-negotiation =       { module = "io.ktor:ktor-client-content-negotiation",           version.ref = "ktor"                        }
+ktor-client-core =                      { module = "io.ktor:ktor-client-core",                          version.ref = "ktor"                        }
+ktor-client-cio-jvm =                   { module = "io.ktor:ktor-client-cio-jvm",                       version.ref = "ktor"                        }
+ktor-client-serialization =             { module = "io.ktor:ktor-client-serialization",                 version.ref = "ktor"                        }
+ktor-client-json =                      { module = "io.ktor:ktor-client-json",                          version.ref = "ktor"                        }
+ktor-serialization-kotlinx-json =       { module = "io.ktor:ktor-serialization-kotlinx-json",           version.ref = "ktor"                        }
+ktor-server-auth =                      { module = "io.ktor:ktor-server-auth-jvm",                      version.ref = "ktor"                        }
+ktor-server-auth-jwt =                  { module = "io.ktor:ktor-server-auth-jwt-jvm",                  version.ref = "ktor"                        }
+ktor-server-auto-head-response =        { module = "io.ktor:ktor-server-auto-head-response-jvm",        version.ref = "ktor"                        }
+ktor-server-caching-headers =           { module = "io.ktor:ktor-server-caching-headers-jvm",           version.ref = "ktor"                        }
+ktor-server-call-id =                   { module = "io.ktor:ktor-server-call-id-jvm",                   version.ref = "ktor"                        }
+ktor-server-call-logging =              { module = "io.ktor:ktor-server-call-logging-jvm",              version.ref = "ktor"                        }
+ktor-server-compression =               { module = "io.ktor:ktor-server-compression-jvm",               version.ref = "ktor"                        }
+ktor-server-config-yaml =               { module = "io.ktor:ktor-server-config-yaml-jvm",               version.ref = "ktor"                        }
+ktor-server-content-negotiation =       { module = "io.ktor:ktor-server-content-negotiation-jvm",       version.ref = "ktor"                        }
+ktor-server-core =                      { module = "io.ktor:ktor-server-core-jvm",                      version.ref = "ktor"                        }
+ktor-server-cors =                      { module = "io.ktor:ktor-server-cors",                          version.ref = "ktor"                        }
+ktor-server-default-headers-jvm =       { module = "io.ktor:ktor-server-default-headers-jvm",           version.ref = "ktor"                        }
+ktor-server-host-common =               { module = "io.ktor:ktor-server-host-common-jvm",               version.ref = "ktor"                        }
+ktor-server-html-builder =              { module = "io.ktor:ktor-server-html-builder-jvm",              version.ref = "ktor"                        }
+ktor-server-netty =                     { module = "io.ktor:ktor-server-netty-jvm",                     version.ref = "ktor"                        }
+ktor-server-rate-limiting =             { module = "io.github.flaxoos:ktor-server-rate-limiting",       version.ref = "rate-limiting"               }
+ktor-server-resources =                 { module = "io.ktor:ktor-server-resources",                     version.ref = "ktor"                        }
+ktor-server-request-validation =        { module = "io.ktor:ktor-server-request-validation",            version.ref = "ktor"                        }
+ktor-server-sessions =                  { module = "io.ktor:ktor-server-sessions-jvm",                  version.ref = "ktor"                        }
+ktor-server-status-pages =              { module = "io.ktor:ktor-server-status-pages-jvm",              version.ref = "ktor"                        }
+ktor-server-test-host =                 { module = "io.ktor:ktor-server-test-host-jvm",                 version.ref = "ktor"                        }
+logback-classic =                       { module = "ch.qos.logback:logback-classic",                    version.ref = "logback"                     }
+oauth0-jwt =                            { module = "com.auth0:java-jwt",                                version.ref = "oauth0-jwt"                  }
+openai-java =                           { module = "com.openai:openai-java",                            version.ref = "openai-java"                 }
+tink =                                  { module = "com.google.crypto.tink:tink",                       version.ref = "tink"                        }
+vapi =                                  { module = "dev.vapi:server-sdk",                               version.ref = "vapi"                        }

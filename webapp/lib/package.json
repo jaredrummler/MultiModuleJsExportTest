@@ -1,0 +1,17 @@
+{
+  "name": "kt-js-test-client",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "kt-js-test-client.mjs",
+  "types": "kt-js-test-client.d.ts",
+  "devDependencies": {
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "ws": "8.18.0",
+    "format-util": "^1.0.5",
+    "@js-joda/core": "3.2.0"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
