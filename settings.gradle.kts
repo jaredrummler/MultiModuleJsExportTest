@@ -1,4 +1,4 @@
-rootProject.name = "kt-js-test"
+rootProject.name = "MultiModuleJsExportTest"
 
 pluginManagement {
   repositories {
